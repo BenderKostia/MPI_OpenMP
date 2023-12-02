@@ -75,14 +75,7 @@ int main(int argc, char** argv) {
     double endTime = MPI_Wtime(); // Вимірювання часу завершення
 
     // На процесі з рангом 0 виводимо кінцеву матрицю та час виконання
-    if (rank == 0) { */
-  /*      cout << "Final Matrix:" << endl;
-        for (int i = 0; i < N; ++i) {
-            for (int j = 0; j < N; ++j) {
-                cout << finalMatrix[i * N + j] << " ";
-            }
-            cout << endl;
-        } */ /*
+    if (rank == 0) { 
         cout << "Execution Time: " << endTime - startTime << " seconds." << endl;
     }
 
